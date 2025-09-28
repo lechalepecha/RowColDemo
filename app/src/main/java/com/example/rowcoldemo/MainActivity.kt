@@ -10,15 +10,16 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.padding
-import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.material3.AlertDialog
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.rowcoldemo.ui.theme.RowColDemoTheme
@@ -43,11 +44,11 @@ class MainActivity : ComponentActivity() {
 fun MainScreen(modifier: Modifier = Modifier){
 
     Row(horizontalArrangement = Arrangement.SpaceBetween,
-        modifier = modifier.width(1000.dp)
+        modifier = modifier.height(300.dp)
     ) {
-        TextCell("9")
-        TextCell("10")
-        TextCell("11")
+        TextCell("9", Modifier.align(Alignment.Top))
+        TextCell("10", Modifier.align(Alignment.CenterVertically))
+        TextCell("11", Modifier.align(Alignment.Bottom))
     }
 
 }
