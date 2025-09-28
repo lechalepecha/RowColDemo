@@ -13,6 +13,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.material3.AlertDialog
+import androidx.compose.ui.layout.LastBaseline
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -45,11 +46,13 @@ fun MainScreen(modifier: Modifier = Modifier){
 
     Row{
         Text(
-            text = "Large text",
+            text = "Large text\n \nMore text",
+            Modifier.alignBy(LastBaseline),
             fontSize = 40.sp,
             fontWeight = FontWeight.Bold)
         Text(
             text = "Small text",
+            Modifier.alignBy(LastBaseline),
             fontSize = 32.sp,
             fontWeight = FontWeight.Bold)
     }
