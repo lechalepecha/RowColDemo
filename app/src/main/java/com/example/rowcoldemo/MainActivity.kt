@@ -12,6 +12,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.padding
 import androidx.compose.ui.Alignment
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
@@ -41,8 +42,8 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen(modifier: Modifier = Modifier){
 
-    Row(horizontalArrangement = Arrangement.End,
-        modifier = modifier.size(width = 600.dp, height = 200.dp)
+    Row(horizontalArrangement = Arrangement.SpaceBetween,
+        modifier = modifier.width(1000.dp)
     ) {
         TextCell("9")
         TextCell("10")
