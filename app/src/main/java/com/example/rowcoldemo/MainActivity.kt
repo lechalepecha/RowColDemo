@@ -40,7 +40,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen(modifier: Modifier = Modifier){
 
-    Row(modifier){
+    Column(modifier){
         TextCell("1")
         TextCell("2")
         TextCell("3")
