@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen(modifier: Modifier = Modifier){
 
-    Column(horizontalAlignment = Alignment.End,
+    Row(horizontalArrangement = Arrangement.End,
         modifier = modifier.size(width = 600.dp, height = 200.dp)
     ) {
         TextCell("9")
