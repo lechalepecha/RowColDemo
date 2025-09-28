@@ -43,12 +43,15 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun MainScreen(modifier: Modifier = Modifier){
 
-    Row(horizontalArrangement = Arrangement.SpaceBetween,
-        modifier = modifier.height(300.dp)
-    ) {
-        TextCell("9", Modifier.align(Alignment.Top))
-        TextCell("10", Modifier.align(Alignment.CenterVertically))
-        TextCell("11", Modifier.align(Alignment.Bottom))
+    Row{
+        Text(
+            text = "Large text",
+            fontSize = 40.sp,
+            fontWeight = FontWeight.Bold)
+        Text(
+            text = "Small text",
+            fontSize = 32.sp,
+            fontWeight = FontWeight.Bold)
     }
 
 }
